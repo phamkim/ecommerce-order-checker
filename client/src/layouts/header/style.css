@@ -1,0 +1,18 @@
+.profile {
+  color: red;
+  margin-right: 35px;
+}
+
+.avt{
+    background-color: rgb(42, 126, 236);
+    cursor: pointer;
+}
+
+.profile-card{
+    margin-top: 20px;
+}
+
+.profile-card ul li {
+    list-style-type: none;
+    margin: 1rem;
+}

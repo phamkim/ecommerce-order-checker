@@ -1,0 +1,10 @@
+const { Router } = require("express");
+const router = Router();
+const orderController = require("../controllers/oder.controller");
+const verifyToken = require("../middleware/auth");
+router.post("/", verifyToken, orderController.addOrder);
+router.get("/", verifyToken, orderController.orders);
+router.get("/:id", verifyToken, orderController.findOrder);
+router.put("/:id", verifyToken, orderController.updateOrder);
+router.delete("/:id", verifyToken, orderController.deleteOrder);
+module.exports = router;
